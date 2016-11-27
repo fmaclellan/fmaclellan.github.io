@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Franco Manca</title>
-  <!-- Bootstrap -->
-  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="competition.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content",
+      collapsible: true
+    });
+  });
+  </script>
+  <link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="competition.css">
 </head>
 <body>
   <div class="container-fluid">
@@ -12,120 +23,220 @@
       <div class="logo">
           <h1>Franco Manca</h1>
           <h2>Sourdough pizza</h2>
-      </div>
     </header>
-<!-- Navbar  now (sit below photo) -->
   <div>
   <!-- Nav tabs -->
-   <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="/index.html" role="tab" data-toggle="tab">HOME</a></li>
-      <li role="presentation"><a href="pages/yourlocal.html" role="tab" data-toggle="tab">YOUR LOCAL</a></li>
-      <li role="presentation"><a href="pages/menu.html" role="tab" data-toggle="tab">MENU</a></li>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation"><a href="https://synnem.github.io/Competition/index.html" role="tab" data-toggle="tab">HOME</a></li>
+      <li role="presentation"><a href="https://synnem.github.io/Competition/yourlocal.html" role="tab" data-toggle="tab">YOUR LOCAL</a></li>
+      <li role="presentation" class="active"><a href="https://synnem.github.io/Competition/menu.html" role="tab" data-toggle="tab">MENU</a></li>
       <li role="presentation"><a href="#settings"  role="tab" data-toggle="tab">RESERVATIONS</a></li>
     </ul>
   <!-- Tab panes -->
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="Home"></div>
+      <div role="tabpanel" class="tab-pane" id="Home"></div>
       <div role="tabpanel" class="tab-pane" id="Yourlocal"></div>
-      <div role="tabpanel" class="tab-pane" id="Menu"></div>
+      <div role="tabpanel" class="tab-pane active" id="Menu"></div>
       <div role="tabpanel" class="tab-pane" id="Reservations"></div>
     </div>
   </div>
-
-  <div id="welcome">
-    <h2>  Exceptional Pizzeria Franco Manco is famous for its sourdough pizza. <br/> <br/>We believe in organic Italian or locally sourced ingredients.
-    </h2>
+<div id="accordion" class="menu">
+<h3>Good to Know</h3>
+  <div class="GTK">
+  <img class="imgGTK" src="http://www.francomanca.co.uk/wp-content/uploads/2016/01/francomanca_stoke-5544.jpg">
+    <h4>Franco Manca Sourdough Pizza</h4>
+    <p>Our pizza is made from slow-rising sourdough and is baked in a wood burning oven at 500&#8451; (900&#x2103;). The slow levitation and blast cooking process lock in the flour's natural aroma and moisture giving a soft and easily digestible crust. As a result, the edge (cornicione) is excellent and shouldn't be discarded.</p>
+    <p>This system was originally developed by the Greek settlers who in the 5<sup>th</sup> century BC founded Neapolis (New Town). They adapted a pre-exisitng baking tradition to develop this new 'Pita', which through experimentation, luck, and linguistic distortions, became pizza. This recipe has been developed under the leading light of Marco Parente and Giuseppe Mascoli.  
+    </p>
+    <h4>Menu Notes</h4>
+    <p>Some vegetables you are likely to see in our specials:</p>
+    <ul>
+      <li>Firarielli - <em>This wild broccoli is a mineral vegetable with strong flavours of iron and a pleasant bitter aftertaste</em></li>
+      <li>Wild Mushrooms - <em>These will vary according to availability, Chanterelle, pied deo mouton, Trompette de la morte, etc.</em></li>
+      <li>Romanesco - <em>Rich in Vitamin C, it is so soft by nature and requires minimal cooking</em></li>
+      <li>Trevigiana - <em>A classical winter red cooking salad with plenty of flavour orginally from the north east of Italy, but also cultivated in the UK</em></li>
+      <li>Kale - <em>Brought to Britain by the Romans, high in Calcium Beta, Carotenes, and Vitamin C. Full flavoured.</em></li>
+    </ul>
+    </div>
+  <h3>Pizzas</h3>
+  <div class="pizza">
+    <img class="imgpizza" src="http://www.francomanca.co.uk/wp-content/uploads/2016/01/francomanca_belsizepark-5952.jpg">
+     <table>
+      <tr>
+        <td class="fooditem">Tomato, Garlic and Oregano</td>
+        <td class="price">£4.50</td>
+      </tr>
+      <tr>
+        <td class="fooditem">Tomato, Mozzarella and Basil</td>
+        <td class="price">£5.90</td>
+      </tr>
+      <tr>
+        <td class="fooditem">Wild Broccoli, Mozzarella, Glouster Old Spot Hand Sliced Sausage (no tomato)</td>
+        <td class="price">£6.85</td>
+      </tr>
+      <tr>
+        <td class="fooditem">Tomato, Garlic, Oregano, Capers, Olives, Anchovies and Mozzarella</td>
+        <td class="price">£6.70</td>
+      </tr>
+      <tr>
+        <td class="fooditem">Tomato, Cured Organic Chorizo (dry and semi-dry) and Mozarella</td>
+        <td class="price">£6.95</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td>Extra Toppings (£0.50 each):</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <td>
+          <ul class="francie">
+            <li><strong>Mozzarella</strong> - Somerset </li>
+            <li><strong>Soft Goat's Cured</strong> - White Lake Dairy</li>
+            <li><strong>Stilton</strong> - Colston Basset</li>
+            <li><strong>Cured Chorizo</strong> - Martinez Somalo, La Rioja</li>
+            <li><strong>Organic Tomatoes</strong> - South of Italy</li>
+            <li><strong>Meats</strong> - Gloucestershire (Rare Breed Survival Trust)</li>
+            <li><strong>Cured Meat</strong> - Lannghirano, Emilia Romagna</li>
+            <li><strong>Wild Capers</strong> - Antonio Caravaglio, Salina</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
   </div>
-
-
-   <!-- carousel is here now -->  
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="https://media.timeout.com/images/100684355/image.jpg" alt="pizza1">
-    </div>
-    <div class="item">
-      <img src="http://www.spottedbylocals.com/london/files/Franco-Manca-London-by-Peter-Hoffer.jpg" alt="pizza2">
-    </div>
-    <div class="item">
-      <img src="https://media.timeout.com/images/100684355/image.jpg" alt="pizza3">
-    </div>
-    <div class="item">
-      <img src="https://media.timeout.com/images/100684355/image.jpg" alt="pizza4">
+  <h3>Salads</h3>
+  <div class="salads">
+    <img class="imgsalad" src="images/saladimage.JPG">
+    <div class="saladtable">
+      <table>
+        <tr>
+          <td class="fooditem">Mixed Leaf Salad</td>
+          <td class="price">£2.45</td>
+        </tr>
+        <tr>
+          <td class="fooditem">Franco and Cantarelli Grana, Olives, and Mixed Leaves</td>
+          <td class="price">£3.55</td>
+        </tr>
+        <tr>
+          <td class="fooditem">Traditional Caprese Salad</td>
+          <td class="price">£3.15</td>
+        </tr>
+        <tr>
+          <td class="fooditem">Avocado, Goat's Curd and Proscuitto Salad</td>
+          <td class="price">£3.75</td>
+        </tr>
+      </table>
     </div>
   </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  <h3>Drinks</h3>
+  <div class ="drinks">
+  <img class="imgdrinks" src="http://www.francomanca.co.uk/wp-content/uploads/2016/01/francomanca_belsizepark-6132.jpg">
+    <table>
+     <tr>
+       <th class="drinktitle">Wine</th>
+       <th class="drinkdetailtitle">Glass</th>
+       <th class="drinkdetailtitle">Bottle</th>
+     </tr>
+      <tr>
+        <td class="drinkitem">Tenute Normanno's Organic Wines - Rosso<br><em>Unfiltered (Nero d'Avola)</em></td>
+        <td class="drinkdetail">£3.90</td>
+        <td class="drinkdetail">£14.95</td>
+      </tr>
+      <tr>
+        <td class="drinkitem">Tenute Normanno's Organic Wines - Bianco<br><em>Catarratto</em></td>
+        <td class="drinkdetail">£3.90</td>
+        <td class="drinkdetail">£14.95</td>
+      </tr> 
+      <tr>
+        <td class="drinkitem">Carlindepaolo's Regina Di Fiori - Rosso<br><em>Dolcetto, Barbera and Croatina</em></td>
+        <td class="drinkdetail">£4.15</td>
+        <td class="drinkdetail">£15.95</td>
+      </tr> 
+      <tr>
+        <td class="drinkitem">Carlindepaolo's Regina Di Fiori - Bianco<br><em>Cortese, Favorita and Arneis</em></td>
+        <td class="drinkdetail">£4.15</td>
+        <td class="drinkdetail">£15.95</td>
+      </tr>
+      <tr>
+        <td class="drinkitem">Bubbles from Folicello - Bianco<br><em>Pignoletto, Montu and Trebbiano</em></td>
+        <td class="drinkdetail">£5.00</td>
+        <td class="drinkdetail">£1.50</td>
+      </tr>
+       <tr>
+        <td class="drinkitem">Bubbles from Folicello - Lambrusco<br><em>Graspoarossa di Castelvetro</em></td>
+        <td class="drinkdetail">£5.00</td>
+        <td class="drinkdetail">£19.50</td>
+      </tr> 
+      <tr>
+        <td><br/></td>
+      </tr> 
+      <tr>
+        <th class="drinktitle">Beers</th>
+        <th class="drinkdetailtitle">Size</th>
+        <th class="drinkdetailtitle">Price</th>
+      </tr>
+      <tr>
+        <td class="drinkitem">No Logo Craft Brewed Pale Ale</td>
+        <td class="drinkdetail">330ml</td>
+        <td class="drinkdetail">£3.40</td>
+      </tr>
+      <tr>
+        <td class="drinkitem">No Logo Craft Brewed Lager</td>
+        <td class="drinkdetail">330ml</td>
+        <td class="drinkdetail">£3.40</td>
+      </tr>
+      <tr>
+        <td><br/></td>
+      </tr>
+      <tr>
+        <th class="drinktitle">Soft Drinks</th>
+          <th class="drinkdetailtitle">Size</th>
+          <th class="drinkdetailtitle">Price</th>
+      </tr>
+      <tr>
+        <td class="drinkitem">Organic Lemonade</td>
+        <td class="drinkdetail">250ml</td>
+        <td class="drinkdetail">£2.20</td>
+      </tr>
+      <tr>
+        <td class="drinkitem">Orange or Apple juice (English)</td>
+        <td class="drinkdetail">250ml</td>
+        <td class="drinkdetail">£2.55</td>      
+      </tr>
+      <tr>
+        <td class="drinkitem">Ferrarelle Naturally Sparkling Water</td>
+        <td class="drinkdetail">500ml</td>
+        <td class="drinkdetail">£2.00</td>
+      </tr>
+      <tr>
+        <td class="drinkitem">Filtered Water Free of Charge</td>
+      </tr>
+      <tr>
+        <td class="drinkitem">Espresso Gianni Frasi flame roasted beans</td>
+        <td> </td>
+        <td class="drinkdetail">£1.60</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
 </div>
-
-<!-- Reviews -->
-</div>
-<div class="container reviews">
-  <h2>WHAT ARE PEOPLE SAYING?</h2>
-    <div class="row">
-      <div class="col-sm-4 ">
-      <blockquote>
-  <p>Thank you guys for making my friend Paul Hammond 's first time in Franco a really good one! We loved the tiramisu also! Magari più caffè peró.</p>
-  <small>Catorina, Maoilini</small>
-</blockquote>
-      </div> 
-      <div class="col-sm-4">
-      <blockquote>
-  <p>Franco Manca is a legend. Today, with eight branches all over the city (the ninth opening this summer) and still nothing over £8 on the menu, Franco Manca has definitely marked its territory in London’s food scene..</p>
-  <small>Julie Hoang, Time out Food critic</small>
-</blockquote>
-      </div> 
-      <div class="col-sm-4">
-      <blockquote>
-  <p>Just amazing sourdough pizza, really relaxed atmosphere, simple menu and friendly staff. I have tried the Brixton and Balham locations and both were great for lunch but very popular in the evening so expect a wait!</p>
-  <small>Annie Levin, Student</small>
-</blockquote>
-      </div> 
-    </div>
-    </div>
-
-<!-- buttons -->
- <div id="socialmedia">
-  <div id="social-buttons">
-    <button class="btn-twitter" href="https://twitter.com/francomancapizz/status/424547805370519552">Twitter</button>
-    <button class="btn-facebook" href="https://www.facebook.com/francomancasoho/">Facebook</button>
-    <button class="btn-pinterest" href="https://uk.pinterest.com/joriwhite/franco-manca/">Pinterest</button>
-  </div>
-  <div class="mc_merge_var">
-    <label for="email">Find out more</label>
-    <input type="text" size="18" placeholder="Enter email address" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input">
-  </div>
-  <div class="mc_signup_submit">
-    <button type="submit" class="btn btn-success">Send</button>
-    </div>
-  </div>
-</div>
-
-   <!-- footnote --> 
 <p class="footer__legal"><span class="footer__legal__copy">© Code First Girls . All rights reserved.</span><span class="footer__legal__design">Site design by: <a target="_blank">Girls</a></span></p>
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
